@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+         John Doe's Web portfolio   
+        </h1>
+        <h4>
+            showcasing html skills using tables
+        </h4>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        </center>
+         <table border="1" align="center">
+            <tr>
+
+            <th colspan="2">
+        
+                <h2 id="about">
+                    About me
+                </h2>
+                <p>
+                  hello i am john doe, a passionate web developer i love building semantic, accesable and responsive websites using core web technologies <br> i specialize in front end development </p>  
+                </p>
+                </th>
+                
+                
+               
+                    <tr>
+                    <th>
+                      <h2 id="skills">skills</h2>
+                
+                    <ul>
+                        <li>Html</li>
+                        <li>Java script</li>
+                        <li>responsive Design</li>
+                        <li>Git,Github</li>
+                    </ul>
+                    <h3 >
+                        Skill level
+                    </h3>
+                    <table border="1" cellspacing="5">
+                        <tr>
+                            <th>
+                                <h4>skill</h4>
+                                </th>
+                                <th>
+                                <h4>level</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>HTML</th>
+                            <th>expert</th>
+                        </tr>
+                        <tr>
+                            <th>Css</th>
+                            <th>Advanced</th>
+                        </tr>
+                        <tr>
+                            <th>javascript</th>
+                            <th>intermediate</th>
+                            </th>
+                        </tr>
+                    </table>
+                    
+                 
+               
+                <th>
+                <h2 id="projects">project</h2>
+                <ol>
+                    <li>
+                        portfolio website-My personal portfolio built using pure HTML and CSS
+                    </li>
+                    <li>
+                        tofo app-a task management tool with vanila java script
+                    </li>
+                    <li>
+                        weather app-a real time weather dashboard using APIs
+                    </li>
+
+                </ol>
+                <img src="https://www.w3schools.com/howto/blackandwhiteportfolio-heros.png" width="150" height="150">
+    
+                </th>
+            
+            
+            
+            <tr>
+              
+                <th colspan="2">
+                <form action="./submit.html" method="get">
+    
+                <h2 id="contact">Contact me</h2>
+        
+        
+                <label for="name">Name:</label>
+               
+                <input type="text" name="Name" placeholder="enter your name" id="name" required>
+                <br>
+                <label for="email"> email:</label>
+                <input type="email" id="email">
+            <br>
+                
+            
+                
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+                <label for="services interested">services interested:</label>
+                <!-- <h4>services interested:</h4> -->
+
+                <input type="checkbox" id="web design" name="sevices interested" value="web design">
+                <label for="web design">web design</label>
+
+                <input type="checkbox" id="seo" name="services interested" value="seo">
+                <label for="seo">SEO</label><br>
+                <label for="country">country:</label>
+                <select id="country" name="country">
+                <option value="country">india</option>
+                <option value="country">USA</option>
+                <option value="country">Uk</option>
+                </select>
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="message"></textarea>
+                <br>
+                <input type="submit">
+                <input type="submit" value="clear">
+
+
+
+                
+                
+                   
+               </form>
+               
+               </th>
+        
+            </tr>
+        
+        </table>
+        
+
+    
+</body>
+</html>
