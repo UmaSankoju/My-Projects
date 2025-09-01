@@ -1,0 +1,33 @@
+body {
+  background-color: lightcyan;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+h2 {
+  color: darkblue;
+  text-align: center;
+}
+hr {
+  
+  height: 2px;
+  background-color: black;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+button {
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
