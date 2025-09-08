@@ -1,0 +1,70 @@
+
+.whole-container{
+    
+    margin-left: 80px;
+    margin-right: 80px;
+   
+}
+.container1{
+    position: relative;
+    margin: 30px;
+    display: flex;      
+    gap: 20px;           
+    justify-content: center; 
+}
+.container2{
+    position: relative;
+    margin: 30px;
+    display: flex;      
+    gap: 20px;           
+    justify-content: center; 
+}
+.img-item1{
+    display: inline-block;
+    text-align: center;
+}
+
+.img-item2{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item3{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item4{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item5{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item6{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item7{
+    display: inline-block;
+    text-align: center; 
+}
+.img-item8{
+    display: inline-block;
+    text-align: center; 
+} 
+.p{
+   position: relative; 
+   display: inline-block;
+}
+.container1 img{
+    width: 300px;
+    height: 450px;
+}
+.container2 img{
+     width: 300px;
+    height: 450px;
+
+}
+.chef{
+    text-align: center; 
+}
