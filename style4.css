@@ -1,0 +1,122 @@
+.image1>img{
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.center1{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50px,-50px); 
+  color:white;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.image2 {
+  width: 70%;              /* controls width of section */
+  max-width: 900px;        /* responsive max width */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image2 img {
+  width: 100%;             /* match container */
+  height: auto;
+  display: block;
+  
+}
+
+.image2 p {
+  text-align: justify;
+  text-align: center;
+}
+.button{
+      background-color: darkgreen;  
+      padding: 15px 50px;         
+      text-align: center;         
+      font-size: 18px;            
+      color: white;
+      border: none;               
+      cursor: pointer;            
+      display: inline-block;  
+}
+.image3 img {
+    width: 100%;
+    height: 600px;
+    padding-top: 20px;
+}
+.image3{
+    position: relative;
+}
+
+.center2{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50px,-50px); 
+  color:white;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.image4 {
+  /* position: relative; */
+  text-align: center;
+}
+
+.when{ 
+    
+    left: 30%; 
+    padding-top: 10px; 
+} 
+.where{ 
+    
+    right: 30%; 
+    padding-top: 10px; 
+}
+.content{
+    display: inline-block;
+}
+
+
+
+.msg {
+  letter-spacing: 2px;
+  display: inline-block;
+} 
+.button1{
+      background-color:chocolate;  
+      padding: 15px 50px;         
+      text-align: center;         
+      font-size: 18px;            
+      color: white;
+      border: none;               
+      cursor: pointer;            
+      display: inline-block;  
+
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.f{
+  display: inline-block;   /* side by side */
+  width: 24%;              /* 4 items equally spaced */
+  text-align: center;
+}
+.footer a{
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+}
