@@ -1,0 +1,55 @@
+.container1{
+    position: fixed;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    justify-items: flex-start;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px;
+    color: black;
+    
+}
+
+.bi{
+    font-size: xx-large;
+    color: black;
+    cursor: pointer;
+}
+.container2{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 68px ;
+}
+
+.container3{
+
+position: fixed; 
+bottom: 0;        
+left: 0;
+width: 100%;      
+background-color: whitesmoke;
+color: white;
+padding: 10px 0;
+display: flex;
+justify-content: space-around;
+
+left: 68px ;  
+  
+}
+.fas{
+    font-size: xx-large;
+    color: black;
+}
+.image img{
+    position: fixed;
+    width: 100%;
+}
