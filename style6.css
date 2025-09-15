@@ -1,0 +1,153 @@
+.main-container{
+    width: 100%;
+    display: block;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.first-container{
+    position: relative;
+    display: inline-block;
+}
+.first-container img{
+    display: block;
+    width: 350px;
+    height: auto;
+
+}
+.image1{
+    
+    display: inline-block;
+   
+    
+}
+.image2{
+    
+    display: inline-block;
+    
+}
+.image3{
+    
+    display: inline-block;
+    
+}
+.image4{
+    
+    display: inline-block;
+     
+}
+.seconed-container{
+    position: relative;
+    display: inline-block;
+}
+.seconed-container img{
+    display:inline-block;
+    width: 350px;
+    height: auto;
+    
+}
+.image5{
+    
+    display: inline-block;
+    
+}
+.image6{
+    
+    display: inline-block;
+    
+}
+.image7{
+    
+    display: inline-block;
+    
+}
+.image8{
+    
+    display: inline-block;
+    
+}
+.text1 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 150px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text2 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 500px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text3 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 850px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text4 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  right: 150px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text5 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 150px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+
+.text6 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 500px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text7 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  left: 850px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+.text8 {
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+  right: 150px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  
+}
+img{
+    border-radius: 50%;
+}
