@@ -1,0 +1,137 @@
+*{
+    margin-top: 0px;
+}
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;   /* vertical layout */
+    justify-content: flex-start;  /* stack from top */
+    align-items: center;     /* center horizontally */
+    width: 300px;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    height: 100%;
+    padding: 20px 0;   /* adds space inside */
+    gap: 40px;         /* gap between "Some Name" and the nav items */
+}
+
+.nav-bar1 {
+    text-align: center;
+}
+
+.nav-bar2 {
+    display: flex;
+    flex-direction: column;   /* stack links vertically */
+    gap: 5px;            /* gap between Portfolio, About Me, Contact */
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.image-container{
+    margin-top: 1px;
+    display: flex;
+    margin-left: 300px;
+    gap: 2px;
+    flex-wrap: wrap;
+    /* padding: 5px; */
+    transition: filter 0.5s ease; 
+}
+.image-container img:hover{
+     transform: scale(1); 
+     filter: brightness(1.3); 
+     
+}
+.img{
+    width: 300px;
+    flex-grow: 1;
+    position: relative;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+}
+.img>img{
+    width: 100%;
+    height: 100%;
+}
+.number{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    gap: 30px;
+    font-size: xx-large;
+    background-color: rgb(216, 211, 200);
+}
+.about-me{
+    margin-left: 300px;
+    background-color:rgb(210, 218, 225);
+    padding-bottom: 50px;
+}
+.about{
+    width: 500px;
+    height: 50%;
+    margin-left: 350px;
+    
+}
+
+
+.skill-bar {
+  background: #ccc;      /* light gray background */
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.skill-level {
+  background: #888;      /* progress color */
+  height: 25px;
+  line-height: 25px;
+  text-align: right;     /* aligns % text to the right */
+  padding-right: 10px;
+  border-radius: 20px 0 0 20px;
+  color: #000;           /* % text color */
+  font-weight: bold;
+}
+.table{
+    display: flex;
+    gap: 30px;
+}
+.contact-me{
+    background-color: lightsteelblue;
+    height: 400px;
+}
+.contact{
+    
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    margin-left: 300px;
+    padding-top: 35px;
+}
+.button{
+    justify-content: center;
+    padding: 5px;
+    
+}
+.table{
+
+  transition: filter 0.5s ease; 
+  
+}
+
+.table-1{
+    background-color: #ccc;
+}
+.table-2{
+    background-color: #ccc;
+}
+
+.table .table-1:hover{
+  transform: scale(1);
+  filter: brightness(2.5);
+}
+.table .table-2:hover{
+  transform: scale(1);
+  filter: brightness(1.5);
+}
