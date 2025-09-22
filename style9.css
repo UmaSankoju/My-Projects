@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.eat{
+    display: none;
+    text-align: left;
+    width: 300px;
+}
+.drink{
+    display: none;
+    text-align: left;
+}
+#eat:checked~.container-1>.eat{
+    display: inline-block;
+    
+}
+#drink:checked~.container-2>.drink{
+    display: inline-block;
+}
+#eat{
+    display: none;
+    width: 150px;
+}
+#drink{
+    display: none;
+}
+label{
+    display: inline-block; 
+    width: 150px;
+    text-align: center;
+    /* padding: 5px; */
+    padding: 8px 16px!important;
+    justify-content: space-around;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+}
+label:hover{
+    background-color: black;
+    color: white;
+}
