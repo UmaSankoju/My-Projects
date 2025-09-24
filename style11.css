@@ -1,0 +1,130 @@
+body, html{
+    height: 100%;
+    margin: 0;          /* remove default margin */
+    display: flex;      /* make body a flex container */
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+}
+
+.chess-board{
+    display: flex;
+    width: 665px;
+    height: 665px;
+    border: 3px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
+    /* box-shadow: 2px 2px 5px red, -2px -2px 5px rgb(0, 162, 255); */
+}
+    
+
+.coumn-1>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-2>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-3>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-4>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-5>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-6>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-7>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-8>.row{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border: 2px solid;
+}
+.coumn-1>.row.row-1,
+.coumn-1>.row.row-3,
+.coumn-1>.row.row-5,
+.coumn-1>.row.row-7
+{
+    background-color: black;
+}
+.coumn-3>.row.row-1,
+.coumn-3>.row.row-3,
+.coumn-3>.row.row-5,
+.coumn-3>.row.row-7
+{
+    background-color: black;
+}
+.coumn-5>.row.row-1,
+.coumn-5>.row.row-3,
+.coumn-5>.row.row-5,
+.coumn-5>.row.row-7
+{
+    background-color: black;
+}
+.coumn-7>.row.row-1,
+.coumn-7>.row.row-3,
+.coumn-7>.row.row-5,
+.coumn-7>.row.row-7
+{
+    background-color: black;
+}
+.coumn-1>.row.row-1,
+.coumn-1>.row.row-3,
+.coumn-1>.row.row-5,
+.coumn-1>.row.row-7
+{
+    background-color: black;
+}
+.coumn-2>.row.row-2,
+.coumn-2>.row.row-4,
+.coumn-2>.row.row-6,
+.coumn-2>.row.row-8
+{
+    background-color: black;
+}
+.coumn-4>.row.row-2,
+.coumn-4>.row.row-4,
+.coumn-4>.row.row-6,
+.coumn-4>.row.row-8
+{
+    background-color: black;
+}
+.coumn-6>.row.row-2,
+.coumn-6>.row.row-4,
+.coumn-6>.row.row-6,
+.coumn-6>.row.row-8
+{
+    background-color: black;
+}
+.coumn-8>.row.row-2,
+.coumn-8>.row.row-4,
+.coumn-8>.row.row-6,
+.coumn-8>.row.row-8
+{
+    background-color: black;
+}
