@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+} 
+body{
+    background-color: whitesmoke;
+}
+.nav-container{
+   width: 100%;
+   background-color: black;
+   color: white; 
+   padding: 10px;
+   display: flex;
+   gap: 5px;
+   position: fixed;
+   top: 0px;
+   z-index: +1;
+}
+.item{
+    padding: 5px;
+    width: 400px;
+    text-align: center;
+    transition: all 0.9s ease;
+}
+.item:hover{
+    background-color:whitesmoke ;
+    color: black;
+    cursor: pointer;
+}
+.bg-container{
+    background-image:url("https://www.w3schools.com/w3images/coffeehouse.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:70vh ;
+    width: 100%;
+    filter: grayscale(50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.text-container1{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    line-height:130px ;
+    letter-spacing: 8px;
+}
+.text-container2{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+.text-container2>p{
+    background-color: black;
+    color: white;
+}
+.text-container3{
+  position: absolute;  
+  bottom: 5px;
+  right: 5px;
+  font-size: 1rem;
+  padding: 5px;
+}
+.text-container3>p{
+    background-color: black;
+    color: white;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main>.main-container{
+    width: 45%;
+    /* border: 2px solid black; */
+    height: fit-content;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+.about>p{
+    letter-spacing: 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin: 50px 0px;
+    margin-left: 220PX;
+}
+.about>.para-1{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+.about>.para-2{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+.about>.para-3{
+    padding: 20px;
+    background-color:ghostwhite;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.image{
+    margin-top: 30px;
+}
+.image>img{
+    width: 100%;
+    filter: grayscale(80%);
+}
+.image>p{
+    padding: 10px;
+}
+.themenu{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin-left: 38%;
+    letter-spacing: 5px;
+}
+.menu{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.eat{
+    display: none;
+    text-align: left;
+    width: 100%;
+    padding: 50PX;
+    line-height: 2;
+}
+.drink{
+    display: none;
+    text-align: left;
+    padding: 50PX;
+    line-height: 2;
+}
+#eat:checked~.container-1>.eat{
+    display: inline-block;
+    
+}
+#drink:checked~.container-2>.drink{
+    display: inline-block;
+}
+#eat{
+    display: none;
+    width: 43%;
+    
+}
+#drink{
+    display: none;
+}
+label{
+    display: inline-block; 
+    width: 43%;
+    text-align: center;
+    /* padding: 5px; */
+    padding: 8px 16px!important;
+    justify-content: space-around;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+}
+label:hover{
+    background-color:gray;
+    color: white;
+}
+.image-1{
+    margin-top: 50px;
+    filter: grayscale(50%);
+}
+.image-1>img{
+    width: 100%;
+}
+.location{
+    margin-top: 40px;
+}
+.where>p{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin-left: 33%;
+    letter-spacing: 4px;
+}
+.location>p{
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.image-2{
+    margin-top: 40px;
+    filter: grayscale(80%);
+}
+.image-2>img{
+    width: 100%;
+}
+.fvi{
+    margin-top: 20px;
+    display: flex;
+}
+.f>p{
+    margin-left: 2px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 7px;
+}
+.paragraph>p{
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin-left: 2px;
+}
+.paragraph-1>p{
+  margin-top: 30px;
+}
+.my-input {
+  width:96%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 2;
+  background-color:white;
+}
+.send{
+    margin-top: 20px;
+}
+.send>p{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: fit-content;
+  letter-spacing: 2px;
+}
+.send>p:hover{
+  background-color:lavender;
+  color: black;
+  
+}
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    /* border: 3px solid black; */
+    background-color:ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer>p{
+    align-items: center;
+    font-size: 18px;
+}
