@@ -1,0 +1,66 @@
+
+.decorated {
+  text-align: center;
+  position: relative;
+  margin: 30px 0;
+  font-size: 28px;
+}
+
+.decorated::before,
+.decorated::after {
+  content: "🤩";         
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.link-list {
+  padding: 0;
+  margin: 20px 0;
+}
+
+.link-list li {
+  list-style:decimal;
+  padding: 8px;
+  
+}
+
+.link-list li:first-child a {
+  color: red;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.link-list li:last-child a {
+  color: blue;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.link-list li:nth-child(2), 
+.link-list li:nth-child(3) {
+  background-color: #f0f0f0;
+  width: 60px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.animated-btn {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+  background-color: rgb(0, 157, 255);
+
+}
