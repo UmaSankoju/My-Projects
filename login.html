@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTrack - Login</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+                        background:linear-gradient(135deg, #a8e6cf, #dcedc1);
+            font-family: 'Lato', sans-serif;
+            color: #145214;
+        }
+        
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        h1 {
+            color: #1b5e20;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        #info {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #c8e6c9;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #2e7d32;
+            outline: none;
+        }
+
+        .btn {
+            background: #28892f;
+color: white;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 600 !important;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+             background: #1b5e20;
+color: white;
+        }
+        
+
+        p {
+            margin-top: 10px;
+        }
+
+        p a {
+            color: #2e7d32;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>EcoTrack Login</h1>
+        <p id="info">Login to continue tracking your eco activities 🌱</p>
+
+        <form id="loginForm">
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register Now</a></p>
+    </div>
+
+
+    <!-- ===== LOGIN SCRIPT ===== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("loginForm");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const email = form.email.value.trim();
+                const password = form.password.value.trim();
+
+                let users = JSON.parse(localStorage.getItem("users")) || [];
+
+                // Check if user exists
+                const found = users.find(
+                    user => user.email === email && user.password === password
+                );
+
+                if (!found) {
+                    alert("Incorrect email or password!");
+                    return;
+                }
+
+                alert("Login successful!");
+
+                // Store logged-in user
+                localStorage.setItem("loggedInUser", email);
+
+                // Redirect to index page
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+</html>

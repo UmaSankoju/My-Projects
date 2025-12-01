@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTrack - Register</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=nest_eco_leaf" />
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background:linear-gradient(135deg, #a8e6cf, #dcedc1);;
+            font-family: 'Lato', sans-serif;
+            color: #145214;
+        }
+        
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .login-container h1 {
+            color: #1b5e20;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        #info {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .login-container input {
+            width: 90%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #c8e6c9;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .login-container input:focus {
+            border-color: #2e7d32;
+            outline: none;
+        }
+
+        .login-container p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container p a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .login-container p a:hover {
+            color: #1b5e20;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+             background: #28892f;
+            color: white;
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 600 !important;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #1b5e20;
+            color: white;
+        }
+
+        svg {
+            background-color: #288128;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#e3e3e3">
+            <path d="M480-160q-56 0-105.5-17.5T284-227l-56 55q-11 11-28 11t-28-11q-11-11-11-28t11-28l55-55q-32-41-49.5-91T160-480q0-134 93-227t227-93h320v320q0 134-93 227t-227 93Zm0-80q100 0 170-70t70-170v-240H480q-100 0-170 70t-70 170q0 39 12 74.5t33 64.5l207-207q11-11 28-11t28 11q12 12 12 28.5T548-491L341-284q29 21 64.5 32.5T480-240Zm0-240Z"/>
+        </svg>
+
+        <h1>EcoTrack</h1>
+        <p id="info">Create an account to start tracking your eco-friendly activities</p>
+        
+    
+        <form action="{{ url_for('register') }}" method="POST">
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit" class="btn">Register</button>
+</form>
+
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+
+    </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const email = form.email.value.trim();
+        const password = form.password.value.trim();
+
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+     
+        const exists = users.some(user => user.email === email);
+
+        if (exists) {
+            alert("User already registered. Please login.");
+            window.location.href = "login.html"; 
+            return;
+        }
+
+        
+        users.push({ email, password });
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Registration successful! Please login now.");
+
+        
+        window.location.href = "login.html";
+    });
+});
+</script>
+
+</body>
+</html>
